@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Project</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header_container">
+        <nav class="nav_structure">
+          <!-- Mobile component -->
+          <div class="mobile_menu hide" id="mobile_menu">
+            <ul class="mobile_list_items">
+              <li><a href="#">How we work</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">View plans</a></li>
+              <img class="sidebar_img" src="images/bg-pattern-mobile-nav.svg" />
+            </ul>
+          </div>
+          <!-- Desktop component -->
+          <div class="desktop_menu">
+            <div class="img_div">
+              <img src="images/logo.svg" />
+            </div>
+            <div class="list_div">
+              <ul class="desktop_list_items">
+                <li><a href="#">How we work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">View plan</a></li>
+              </ul>
+              <button
+                class="hideOnDesktop"
+                id="hamburger"
+                onclick="sidebarMenuShow()"
+              >
+                <img src="images/icon-hamburger.svg" />
+              </button>
+              <button class="hide" id="x" onclick="sidebarMenuShow()">
+                <img src="images/icon-close.svg" />
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="intro_div hideOnDesktop">
+        <img class="intro_img" src="images/image-intro-mobile.jpg" />
+      </div>
+      <!-- Mobile -->
+      <div class="human_container hideOnDesktop">
+        <div class="human_structure">
+          <h2 class="human_h2">
+            Humanizing <span class="human_span">your Insurance.</span>
+          </h2>
+          <p class="human_p">
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that's right for
+            you. Ensure you and your loved ones are protected
+          </p>
+          <button class="human_button">View plans</button>
+          <img
+            class="intro_rightmob"
+            src="images/bg-pattern-intro-right-mobile.svg"
+          />
+        </div>
+      </div>
+      <!-- Desktop -->
+      <div class="human_container" id="hideOnMobile">
+        <div class="human_structure">
+          <img
+            class="intro_left"
+            src="images/bg-pattern-intro-left-desktop.svg"
+          />
+          <div class="human_div1">
+            <h2 class="human_h2">
+              Humanizing <span class="human_span">your Insurance.</span>
+            </h2>
+            <p class="human_p">
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that's right
+              for you. Ensure you and your loved ones are protected
+            </p>
+            <button class="human_button">View plans</button>
+          </div>
+          <div class="intro_desk">
+            <img class="intro_deskimg" src="images/image-intro-desktop.jpg" />
+          </div>
+        </div>
+        <img
+          class="intro_right"
+          src="images/bg-pattern-intro-right-desktop.svg"
+        />
+      </div>
+    </header>
+    <!-- Section -->
+    <section>
+      <div class="section_container">
+        <div class="section_structure">
+          <div class="hr_line"></div>
+          <h3 class="h3_style">We're different</h3>
+          <div class="sectionicon_div">
+            <div class="section_sm">
+              <img src="images/icon-snappy-process.svg" />
+              <h5 class="h5_style">Snappy Process</h5>
+              <p class="p_style">
+                Our application process can be completed in minutes, not hours.
+                Don't get stuck filling in tedious forms.
+              </p>
+            </div>
+            <div class="section_sm">
+              <img src="images/icon-affordable-prices.svg" />
+              <h5 class="h5_style">Affordable Prices</h5>
+              <p class="p_style">
+                We don't want you worrying about high monthly costs. Our prices
+                may be low, but we still offer the best coverage possible.
+              </p>
+            </div>
+            <div class="section_sm">
+              <img src="images/icon-people-first.svg" />
+              <h5 class="h5_style">People First</h5>
+              <p class="p_style">
+                Our plans aren't full of conditions and clauses to prevent
+                payouts. We make sure you're covered when you need it.
+              </p>
+            </div>
+          </div>
+          <div class="find_container">
+            <div class="find_structure">
+              <h4 class="h4_style">
+                Find out more <span class="find_span">about how we work</span>
+              </h4>
+              <button class="find_button">How we work</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer_container">
+      <div class="footer_structure">
+        <div class="footer_div1">
+          <div class="footer_logo_div">
+            <img class="footer_logo" src="images/logo.svg" alt="logo" />
+          </div>
+          <div class="social_icons">
+            <img src="images/icon-facebook.svg" />
+            <img src="images/icon-twitter.svg" />
+            <img src="images/icon-pinterest.svg" />
+            <img src="images/icon-instagram.svg" />
+          </div>
+        </div>
+        <div class="footer_div2"></div>
+        <div class="footer_div3">
+          <nav class="footer_navdiv">
+            <p class="p_footer">Our company</p>
+            <ul class="footlist_container">
+              <li><a>How we work</a></li>
+              <li><a>Why insure</a></li>
+              <li><a>Check price</a></li>
+              <li><a>Reviews</a></li>
+            </ul>
+          </nav>
+          <nav class="footer_navdiv">
+            <p class="p_footer">Help me</p>
+            <ul class="footlist_container">
+              <li><a>faq</a></li>
+              <li><a>Terms of use</a></li>
+              <li><a>Privacy policy</a></li>
+              <li><a>Cookies</a></li>
+            </ul>
+          </nav>
+          <nav class="footer_navdiv">
+            <p class="p_footer">Contact</p>
+            <ul class="footlist_container">
+              <li><a>Sales</a></li>
+              <li><a>Support</a></li>
+              <li><a>Live chat</a></li>
+            </ul>
+          </nav>
+          <nav class="footer_navdiv">
+            <p class="p_footer">Others</p>
+            <ul class="footlist_container">
+              <li><a>Careers</a></li>
+              <li><a>Press</a></li>
+              <li><a>Licenses</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
