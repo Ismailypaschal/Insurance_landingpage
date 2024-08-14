@@ -54,6 +54,8 @@ body {
   left: 0;
   width: 100%;
   z-index: 10000;
+  background: hsl(270, 2%, 24%);
+  /* position: fixed; */
 }
 
 .mobile_list_items {
@@ -64,7 +66,6 @@ body {
   text-transform: uppercase;
   font-family: karla;
   font-size: 24px;
-  background: hsl(270, 2%, 24%);
   align-items: center;
   gap: 40px;
 }
